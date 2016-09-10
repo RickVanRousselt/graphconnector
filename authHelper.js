@@ -10,8 +10,8 @@ var credentials = {
   authority: 'https://login.microsoftonline.com/common',
   authorize_endpoint: '/oauth2/v2.0/authorize',
   token_endpoint: '/oauth2/v2.0/token',
-  client_id: 'ENTER_YOUR_CLIENT_ID',
-  client_secret: 'ENTER_YOUR_SECRET',
+  client_id: '2b52d954-2e51-4b50-a61d-408534629809',
+  client_secret: '5OaCGMdY36ECTkgcixz8Txo',
   redirect_uri: 'http://localhost:3000/login',
   scope: 'User.Read Mail.Send offline_access'
 };
