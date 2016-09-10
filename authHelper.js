@@ -12,7 +12,7 @@ var credentials = {
   token_endpoint: '/oauth2/v2.0/token',
   client_id: '2b52d954-2e51-4b50-a61d-408534629809',
   client_secret: '5OaCGMdY36ECTkgcixz8Txo',
-  redirect_uri: 'http://localhost:3000/login',
+  redirect_uri: 'http://localhost/login',
   scope: 'User.Read Mail.Send offline_access'
 };
 
