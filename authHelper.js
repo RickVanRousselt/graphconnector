@@ -3,7 +3,7 @@
  * See LICENSE in the project root for license information.
  */
 var OAuth = require('oauth');
-var uuid = require('node-uuid');
+var uuid = require('node-uuid'); 
 
 // The application registration (must match Azure AD config)
 var credentials = {
