@@ -4,7 +4,7 @@
 Connecting to Office 365 is the first step every app must take to start working with Office 365 services and data. This sample shows how to connect and then call one endpoint through the Microsoft Graph API (previously called Office 365 unified API), and uses the Office Fabric UI to create an Office 365 experience.
 
 The sample uses the v2.0 authentication endpoint, which enables users to sign in with either their personal or work or school Microsoft accounts.
-
+ 
 ![Office 365 Node.js Connect sample screenshot](./readme-imgs/screenshot.PNG)
 > Note: For an in-depth look at the code for calling the Microsoft Graph API in a Node.js app, see [Call Microsoft Graph with a Node.js app](https://graph.microsoft.io/docs/platform/nodejs).
 
