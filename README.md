@@ -1,6 +1,8 @@
-# Office 365 Node.js Connect sample using Microsoft Graph
-![Build Status](https://office.visualstudio.com/_apis/public/build/definitions/0323e522-dd35-4fbf-8d8a-a3370491558c/446/badge "Build Status")
-  ake to start working with Office 365 services and data. This sample shows how to connect and then call one endpoint through the Microsoft Graph API (previously called Office 365 unified API), and uses the Office Fabric UI to create an Office 365 experience.
+# Office 365 Node.js Connect sample using Microsoft Graph in a docker container
+
+This code is a copy found in the examples on Office development.
+I've added a Dockerfile here so that this code can run from a docker container.
+This code is linked to https://hub.docker.com/r/rickvanrousselt/graphconnector/ where after a commit it will automatically build a new docker image.
 
 The sample uses the v2.0 authentication endpoint, which enables users to sign in with either their personal or work or school Microsoft accounts.
  
@@ -28,7 +30,7 @@ To use the Office 365 Node.js Connect sample, you need the following:
 6. Add the following to the list of **Redirect URIs**:
 
     ```
-    http://localhost:3000/login
+    http://localhost/login
     ```    
     
 7. Under **Application Secrets** click **Generate New Password**.
@@ -42,24 +44,13 @@ To use the Office 365 Node.js Connect sample, you need the following:
 
 To run the app, type the following into your command line:
 
-1. ```npm install``` - install application dependencies
-2. ```npm start``` - starts the application server
+docker run -d -p 80:3000 rickvanrousselt/graphconnector
 
 ## Launch the app in your browser
-Once the application server has been started, open your web browser to ```http://localhost:3000```
+Once the application server has been started, open your web browser to ```http://localhost```
 
 ## Questions and comments
 
-We'd love to get your feedback about the Office 365 Node.js Connect sample. You can send your questions and suggestions to us in the [Issues](https://github.com/OfficeDev/O365-Nodejs-Microsoft-Graph-Connect/issues) section of this repository.
-
-Questions about Office 365 development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/Office365+MicrosoftGraph). Make sure that your questions or comments are tagged with [Office365] and [MicrosoftGraph].
-
-<a name="contributing"></a>
-## Contributing ##
-
-If you'd like to contribute to this sample, see [CONTRIBUTING.MD](/CONTRIBUTING.md).
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
   
 ## Additional resources
 
@@ -67,6 +58,3 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 * [Getting started with Office 365 APIs](http://dev.office.com/getting-started/office365apis)
 * [Overview of Microsoft Graph](http://graph.microsoft.io)
 * [Office UI Fabric](https://github.com/OfficeDev/Office-UI-Fabric)
-
-## Copyright
-Copyright (c) 2016 Microsoft. All rights reserved.
